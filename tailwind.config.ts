@@ -9,9 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "blur-gradient": "url(assets/bg-mobile.svg)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "background": "#111026",
+        primary: "#6850BF",
+        "primary-light": "#9266F2",
+        secondary: "#0E1A59",
+        "secondary-light": "#52C5F2",
+      },
+      fontFamily: {
+        "ultralife": "Ultralife sans"
       },
     },
   },
