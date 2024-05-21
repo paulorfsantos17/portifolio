@@ -6,10 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npx lint"
   },
   "dependencies": {
     "next": "14.2.3",
+    "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18"
   },
