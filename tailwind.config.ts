@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "blur-gradient": "url(assets/bg-mobile.svg)",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "blur-gradient-mobile": "url(assets/bg-mobile.svg)",
+        "particles-mobile": "url(assets/particles-mobile.svg)",
+      },
+      fontFamily: {
+        ultralife: ["Ultralife", "sans-serif"],
       },
       colors: {
         "background": "#111026",
@@ -19,9 +21,6 @@ const config: Config = {
         "primary-light": "#9266F2",
         secondary: "#0E1A59",
         "secondary-light": "#52C5F2",
-      },
-      fontFamily: {
-        "ultralife": "Ultralife sans"
       },
     },
   },

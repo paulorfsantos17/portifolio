@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.className} bg-background bg-blur-gradient bg-cover`} >{children}</body>
+      <body className={`${archivo.className} bg-background bg-blur-gradient-mobile bg-cover`} >{children}</body>
     </html>
   );
 }
