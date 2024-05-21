@@ -1,5 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Ultralife';
+  src: url(/fonts/ultralife-sans-clear.ttf) format("ttf")
+
+}
 @tailwind utilities;
 
 :root {
@@ -8,14 +14,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@layer base{
-  @font-face {
-    font-family: 'Ultralife sans';
-
-    src:url(/fonts/ultralife-sans-clear.ttf) format("ttf")
-  
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
