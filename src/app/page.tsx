@@ -1,6 +1,7 @@
-import Header from "./components/header";
-import LineSeparator from "./components/line-separtor";
-import About from "./components/about";
+import About from './components/about'
+import Header from './components/header'
+import LineSeparator from './components/line-separtor'
+import Projects from './components/projects'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <LineSeparator />
       <About />
+      <Projects />
     </div>
-  );
+  )
 }
