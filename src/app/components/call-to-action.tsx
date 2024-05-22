@@ -3,12 +3,14 @@ import { PiChat } from 'react-icons/pi'
 export default function CallToAction() {
   return (
     <section
-      className="mx-8 my-12 flex flex-col items-center justify-center gap-16
-        bg-gradient-to-r from-secondary-light via-primary-light  to-primary bg-clip-text font-ultralife 
-        text-transparent 
-        md:mt-40 md:px-36"
+      className="taos:translate-y-[-200px] taos:opacity-0 mx-8 my-12 flex flex-col items-center
+        justify-center gap-16 bg-gradient-to-r  from-secondary-light via-primary-light to-primary 
+        bg-clip-text 
+        font-ultralife text-transparent
+        delay-[300ms] duration-[600ms] md:mt-40 md:px-36"
+      data-taos-offset="600"
     >
-      <h2 className="text-center  font-ultralife text-3xl font-bold uppercase md:text-5xl">
+      <h2 className="text-center  font-ultralife text-3xl font-bold uppercase md:text-5xl  ">
         Interessado em colaborar comigo?
       </h2>
       <p className="text-center text-primary-light md:text-3xl">
