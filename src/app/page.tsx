@@ -1,3 +1,4 @@
+import { Abilities } from './components/abilities'
 import About from './components/about'
 import Header from './components/header'
 import LineSeparator from './components/line-separtor'
@@ -10,6 +11,7 @@ export default function Home() {
       <LineSeparator />
       <About />
       <Projects />
+      <Abilities />
     </div>
   )
 }
