@@ -5,7 +5,7 @@ interface SocialButtonProps extends LinkHTMLAttributes<HTMLLinkElement> {
 }
 export default function SocialButton({ icon }: SocialButtonProps) {
   return (
-    <a className="flex h-16 w-16 items-center justify-center rounded-full border-opacity-0  bg-primary-light">
+    <a className="flex h-16 w-16 items-center justify-center rounded-full border-opacity-0 bg-primary-light  text-slate-200">
       {icon}
     </a>
   )
