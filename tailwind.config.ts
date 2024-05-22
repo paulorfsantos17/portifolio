@@ -1,11 +1,16 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: {
+    files: [
+      './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+  },
+
   theme: {
     extend: {
       backgroundImage: {
@@ -26,6 +31,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('taos/plugin')],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))',
+  ],
 }
 export default config
