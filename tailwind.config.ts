@@ -22,6 +22,7 @@ const config: Config = {
         'primary-light': '#9266F2',
         secondary: '#0E1A59',
         'secondary-light': '#52C5F2',
+        'slate-200': '#E2E8F0',
       },
     },
   },
