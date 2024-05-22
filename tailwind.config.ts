@@ -37,5 +37,6 @@ const config: Config = {
     '!delay-[0ms]',
     'html.js :where([class*="taos:"]:not(.taos-init))',
   ],
+  mode: 'jit',
 }
 export default config
