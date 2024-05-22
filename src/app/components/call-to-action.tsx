@@ -15,9 +15,18 @@ export default function CallToAction() {
         Estou sempre aberto para discutir trabalhos de Desenvolvimento Web ou
         oportunidades de parceria.
       </p>
-      <button className="flex items-center gap-4 rounded-full bg-primary px-6 py-3 font-ultralife font-bold uppercase text-slate-200 ">
-        <PiChat className="h-8 w-8 text-slate-200" />
-        Iniciar uma conversa
+      <button
+        className="hover:bg-transparen  group relative z-10 flex items-center gap-4 rounded-full border border-transparent
+        bg-primary px-6 py-3 font-ultralife font-bold uppercase text-slate-200
+        duration-300 ease-in hover:border-primary-light
+        hover:bg-transparent hover:text-primary-light"
+      >
+        <div
+          className=" z-5 absolute right-[-1px] box-content  h-[80%] w-[100%] scale-50 animate-ping rounded-full
+            bg-primary opacity-100 blur-sm duration-75 ease-in group-hover:animate-none group-hover:opacity-0"
+        ></div>
+        <PiChat className="z-10 h-8 w-8 " />
+        <p className="z-10">Iniciar uma conversa</p>
       </button>
     </section>
   )
