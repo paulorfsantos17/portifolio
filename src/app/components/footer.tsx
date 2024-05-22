@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="mx-14 my-4 flex min-h-20 flex-col  sm:flex-row sm:items-center sm:justify-around">
       <p className="w-full text-center text-slate-200">
-        Copyright © 2024 
+        Copyright 2024 
         <span className="text-primary-light">devpaulo.com </span>. Todos os
         direitos reservados.
       </p>
