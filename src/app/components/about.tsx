@@ -10,7 +10,11 @@ import SocialButton from './social-button'
 export default function About() {
   return (
     <main className="mx-8 my-24 mb-12 flex flex-col items-center gap-12 bg-particles-mobile sm:mx-12 sm:grid sm:grid-cols-2">
-      <ScrollAnimation animateIn="animate__fadeInLeft" duration={1}>
+      <ScrollAnimation
+        animateIn="animate__fadeInLeft"
+        duration={1}
+        offset={200}
+      >
         <div className=" flex flex-col gap-12 sm:gap-8">
           <h1
             className="inline-block bg-gradient-to-r from-secondary-light via-primary-light to-primary 
