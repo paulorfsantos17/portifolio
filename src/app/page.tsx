@@ -1,4 +1,4 @@
-import 'animate.css'
+import 'animate.css/animate.min.css'
 
 import { Abilities } from './components/abilities'
 import About from './components/about'
