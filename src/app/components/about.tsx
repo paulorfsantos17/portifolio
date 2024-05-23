@@ -29,10 +29,10 @@ export default function About() {
           src={Avatar}
           alt=""
           width={260}
-          className="h-max-[260] sm:max-w-[180px] animate-in zoom-in-50 fade-in duration-700"
+          className="h-max-[260] duration-700 animate-in fade-in zoom-in-50 sm:max-w-[180px]"
         />
 
-        <nav className="flex h-20 w-full justify-center gap-16 zoom-in animate-in fade-in-5 duration-700 delay-200">
+        <nav className="flex h-20 w-full justify-center gap-16 delay-200 duration-700 animate-in fade-in-5 zoom-in">
           <SocialButton
             icon={<FaWhatsapp className="h-8 w-8" />}
             title="Whatsapp"

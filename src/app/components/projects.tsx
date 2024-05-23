@@ -28,12 +28,14 @@ export default function Projects() {
 
   return (
     <section className="my-8 ml-8 space-y-6 sm:mx-10">
-      <h2 className="font-ultralife text-3xl font-bold uppercase text-slate-200 fade-in animate-in slide-in-from-left duration-500 delay-500">
+      <h2 className="font-ultralife text-3xl font-bold uppercase text-slate-200 delay-500 duration-500 animate-in fade-in slide-in-from-left">
         Projetos
       </h2>
 
-      <div className="flex  min-h-[450px] items-center gap-8 
-          fade-in animate-in slide-in-from-left duration-500 delay-500">
+      <div
+        className="flex  min-h-[450px] items-center gap-8 
+          delay-500 duration-500 animate-in fade-in slide-in-from-left"
+      >
         <button
           onClick={() => handleScrollLeft()}
           onMouseOver={() => handleScrollLeft()}
