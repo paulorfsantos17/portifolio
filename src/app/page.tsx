@@ -1,3 +1,5 @@
+import 'animate.css'
+
 import { Abilities } from './components/abilities'
 import About from './components/about'
 import CallToAction from './components/call-to-action'

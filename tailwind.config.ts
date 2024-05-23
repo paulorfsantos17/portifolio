@@ -26,16 +26,6 @@ const config: Config = {
       },
     },
   },
-<<<<<<< HEAD
-  plugins: [require('taos/plugin')],
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))',
-  ],
-  mode: 'jit',
-=======
   plugins: [],
->>>>>>> parent of 4ceac7a (chore: add taos plugin tailwiindcss)
 }
 export default config

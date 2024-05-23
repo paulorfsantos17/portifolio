@@ -2,8 +2,6 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Archivo } from 'next/font/google'
-import Script from 'next/script'
-
 const archivo = Archivo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -23,8 +21,6 @@ export default function RootLayout({
       >
         {children}
       </body>
-      <Script>{`<script>document.documentElement.classList.add('js')</script>`}</Script>
-      <Script src="https://unpkg.com/taos@1.0.5/dist/taos.js" />
     </html>
   )
 }

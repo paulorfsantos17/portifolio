@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       next:
         specifier: 14.2.3
         version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -18,8 +21,8 @@ importers:
         specifier: ^18
         version: 18.3.1
       react-animate-on-scroll:
-        specifier: ^2.1.9
-        version: 2.1.9(classnames@2.5.1)(react@18.3.1)
+        specifier: 2.1.8
+        version: 2.1.8(classnames@2.5.1)(react@18.3.1)
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
@@ -48,6 +51,9 @@ importers:
       '@types/react':
         specifier: ^18
         version: 18.3.2
+      '@types/react-animate-on-scroll':
+        specifier: ^2.1.8
+        version: 2.1.8
       '@types/react-dom':
         specifier: ^18
         version: 18.3.0
@@ -250,6 +256,9 @@ packages:
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
 
+  '@types/react-animate-on-scroll@2.1.8':
+    resolution: {integrity: sha512-Lyd1hb1aY9T0bOUL3VE7bKuOlAv2nBziJg5piDLqW+jxzy5jCa/nIftsOpYxZ0+Sdo0wFXuI6tpLo6B0Q288IQ==}
+
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
@@ -332,6 +341,9 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1413,8 +1425,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-animate-on-scroll@2.1.9:
-    resolution: {integrity: sha512-E4PZLX6RDLLn+/iIMhnQrC1xU74ixGcCQ5/TBX8fBsaO+SnaU9VFoZLvIfUqVf3mH5HUNzO8wAqA11niot5Obw==}
+  react-animate-on-scroll@2.1.8:
+    resolution: {integrity: sha512-x43/RNT/MSONrlH8LwaqF3htNlVGQqlgulQx6bpiUBYq8PnI7yg7adcUl/q8BmrRLMhTNnWsoJPM+BtPYKDENQ==}
     peerDependencies:
       classnames: ^2.2.5
       react: '>= 15.4.1 < 19.0.0-0'
@@ -1901,6 +1913,10 @@ snapshots:
 
   '@types/prop-types@15.7.12': {}
 
+  '@types/react-animate-on-scroll@2.1.8':
+    dependencies:
+      '@types/react': 18.3.2
+
   '@types/react-dom@18.3.0':
     dependencies:
       '@types/react': 18.3.2
@@ -2012,6 +2028,8 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
+
+  animate.css@4.1.1: {}
 
   ansi-regex@5.0.1: {}
 
@@ -3182,7 +3200,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-animate-on-scroll@2.1.9(classnames@2.5.1)(react@18.3.1):
+  react-animate-on-scroll@2.1.8(classnames@2.5.1)(react@18.3.1):
     dependencies:
       classnames: 2.5.1
       lodash.throttle: 4.1.1
