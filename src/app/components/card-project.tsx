@@ -6,7 +6,7 @@ export default function CardProject() {
   return (
     <div
       className="relative flex  h-96 min-w-[16rem] max-w-[18rem] cursor-pointer flex-col items-center
-    gap-6  rounded-xl  border-[1px]  border-slate-200/20 shadow-sm shadow-slate-200/20  hover:scale-110  hover:duration-200 hover:ease-in-out"
+        gap-6  rounded-xl  border-[1px]  border-slate-200/20 shadow-sm shadow-slate-200/20  hover:scale-110  hover:duration-200 hover:ease-in-out"
     >
       <div
         className="absolute  h-full w-full 

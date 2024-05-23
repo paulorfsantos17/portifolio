@@ -3,12 +3,10 @@ import { PiChat } from 'react-icons/pi'
 export default function CallToAction() {
   return (
     <section
-      className="taos:translate-y-[-200px] taos:opacity-0 mx-8 my-12 flex flex-col items-center
+      className="mx-8 my-12 flex flex-col items-center
         justify-center gap-16 bg-gradient-to-r  from-secondary-light via-primary-light to-primary 
         bg-clip-text 
-        font-ultralife text-transparent
-        delay-[300ms] duration-[600ms] md:mt-40 md:px-36"
-      data-taos-offset="600"
+        font-ultralife text-transparent md:mt-40 md:px-36"
     >
       <h2 className="text-center  font-ultralife text-3xl font-bold uppercase md:text-5xl  ">
         Interessado em colaborar comigo?
@@ -18,10 +16,10 @@ export default function CallToAction() {
         oportunidades de parceria.
       </p>
       <button
-        className="hover:bg-transparen  group relative z-10 flex items-center gap-4 rounded-full border border-transparent
-        bg-primary px-6 py-3 font-ultralife font-bold uppercase text-slate-200
-        duration-300 ease-in hover:border-primary-light
-        hover:bg-transparent hover:text-primary-light"
+        className="group  relative z-10 flex items-center gap-4 rounded-full border border-transparent bg-primary
+          px-6 py-3 font-ultralife font-bold uppercase text-slate-200 duration-300
+          ease-in hover:border-primary-light hover:bg-transparent
+        hover:text-primary-light"
       >
         <div
           className=" z-5 absolute right-[-1px] box-content  h-[80%] w-[100%] scale-50 animate-ping rounded-full

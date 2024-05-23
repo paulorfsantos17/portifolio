@@ -27,11 +27,7 @@ export default function About() {
         </p>
       </div>
 
-      <div
-        className="taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0 flex flex-col items-center 
-          justify-center gap-8 delay-[300ms] duration-[600ms]"
-        data-taos-offset="400"
-      >
+      <div className="flex flex-col items-center justify-center gap-8 ">
         <Image
           src={Avatar}
           alt=""

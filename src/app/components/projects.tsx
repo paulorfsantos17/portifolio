@@ -32,17 +32,12 @@ export default function Projects() {
   return (
     <section className="my-8 ml-8 space-y-6 sm:mx-10">
       <h2
-        className="taos:translate-x-[-200px] taos:opacity-0 font-ultralife text-3xl
-          uppercase text-slate-200 delay-[300ms] duration-[600ms]"
-        data-taos-offset="400"
+        className="font-ultralife text-3xl
+          uppercase text-slate-200"
       >
         Projetos
       </h2>
-      <div
-        className="taos:translate-x-[-400px] taos:opacity-0  flex  min-h-[450px] 
-            items-center gap-8 delay-[1000ms] duration-[800ms]"
-        data-taos-offset="400"
-      >
+      <div className="flex  min-h-[450px] items-center gap-8 ">
         <button
           onClick={() => handleScrollLeft()}
           onMouseOver={() => handleScrollLeft()}
