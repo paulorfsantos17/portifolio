@@ -9,7 +9,7 @@ import Projects from './components/projects'
 
 export default function Home() {
   return (
-    <div className="mt-4 w-full">
+    <div className="w-full">
       <Header />
       <About />
       <Projects />

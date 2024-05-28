@@ -16,7 +16,7 @@ export default function Header() {
   const { scrollPosition: scrollY } = useScroll()
 
   const stylesNavMobile =
-    'fixed right-0 top-0 z-50 flex h-full w-[60%] flex-col items-center gap-8 bg-slate-900 pt-8 text-xl slide-in-from-right animate-in duration-500'
+    'absolute top-0 right-0 z-50 flex h-full w-full flex-col items-center gap-8 bg-slate-900 pt-8 text-xl '
 
   function handleSetClosedNav() {
     setIsclosedNav(!isClosedNav)
@@ -49,29 +49,32 @@ export default function Header() {
   }, [ScrollActiveLink])
 
   return (
-    <>
+    <div className=''>
       <nav className={isClosedNav ? 'hidden' : stylesNavMobile}>
-        <a onClick={handleSetClosedNav} className="mr-4  self-end ">
+        <a onClick={handleSetClosedNav} className="self-end  pr-4 ">
           <LuX className="h-8 w-8" />
         </a>
         <LinkNav
           title="Sobre"
           idElement="about"
           active={activeLink === 'about'}
+          closedNav={handleSetClosedNav}
         />
         <LinkNav
           title="Projetos"
           idElement="projects"
           active={activeLink === 'projects'}
+          closedNav={handleSetClosedNav}
         />
         <LinkNav
           title="Habilidades"
           idElement="abilities"
           active={activeLink === 'abilities'}
+          closedNav={handleSetClosedNav}
         />
       </nav>
-      <header className="fixed top-0 z-40  flex min-h-20 min-w-full flex-col gap-2 border-b border-b-primary-light/30 bg-background px-14 py-4 shadow shadow-primary-light/30">
-        <div className="flex w-full items-center justify-between">
+      <header className="top-0 z-40 flex min-h-20 min-w-full flex-col gap-2 border-b border-b-primary-light/30 bg-background py-4 shadow shadow-primary-light/30 sm:fixed  sm:px-14 sm:py-4">
+        <div className="flex w-full items-center justify-center sm:justify-between ">
           <Image
             src={Logo}
             alt="Dev Paulo Logo"
@@ -107,6 +110,6 @@ export default function Header() {
           </nav>
         </div>
       </header>
-    </>
+    </div>
   )
 }
