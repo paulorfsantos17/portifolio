@@ -49,7 +49,7 @@ export default function Header() {
   }, [ScrollActiveLink])
 
   return (
-    <div className=''>
+    <div className="w-full">
       <nav className={isClosedNav ? 'hidden' : stylesNavMobile}>
         <a onClick={handleSetClosedNav} className="self-end  pr-4 ">
           <LuX className="h-8 w-8" />
