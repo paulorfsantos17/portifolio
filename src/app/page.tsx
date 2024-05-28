@@ -1,3 +1,4 @@
+'use client'
 import { Abilities } from './components/abilities'
 import About from './components/about'
 import CallToAction from './components/call-to-action'
@@ -8,9 +9,8 @@ import Projects from './components/projects'
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="mt-4 w-full">
       <Header />
-      <LineSeparator />
       <About />
       <Projects />
       <Abilities />

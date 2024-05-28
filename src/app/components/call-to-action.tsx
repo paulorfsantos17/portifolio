@@ -21,9 +21,9 @@ export default function CallToAction() {
         px-6 py-3 font-ultralife font-bold uppercase text-slate-200 duration-300
         ease-in hover:border-primary-light hover:bg-transparent
       hover:text-primary-light"
-      >
+      > 
         <div
-          className=" z-5 absolute right-[-1px] box-content  h-[80%] w-[100%] scale-50 animate-ping rounded-full
+          className=" z-5 absolute right-[-1px] box-content  h-[80%] w-[100%] scale-[0.1] animate-ping rounded-full
             bg-primary opacity-100 blur-sm   group-hover:animate-none group-hover:opacity-0"
         ></div>
         <PiChat className="z-10 h-8 w-8 " />
