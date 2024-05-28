@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { MouseEvent, useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { LuX } from 'react-icons/lu'
 
 import Logo from '@/app/assets/logo.svg'
