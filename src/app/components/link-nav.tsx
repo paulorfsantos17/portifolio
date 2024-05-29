@@ -1,6 +1,7 @@
 import { MouseEvent } from 'react'
 interface LinkNavProps {
   title: string
+  arialLabel: string
   idElement: string
   active?: boolean
   closedNav?: () => void
@@ -8,6 +9,7 @@ interface LinkNavProps {
 
 export function LinkNav({
   title,
+  arialLabel,
   idElement,
   active = false,
   closedNav,
@@ -22,6 +24,7 @@ export function LinkNav({
   }
   return (
     <a
+      aria-label={arialLabel}
       onClick={(e) => handleNavigateToID(e, idElement)}
       className={`text-md cursor-pointer font-bold   sm:text-xl ${active ? 'text-slate-200' : 'text-slate-600'}`}
     >

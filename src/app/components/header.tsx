@@ -6,7 +6,7 @@ import { LuX } from 'react-icons/lu'
 import Logo from '@/app/assets/logo.svg'
 
 import { useScroll } from '../hooks/useScroll'
-import { LinkNav } from './LinkNav'
+import { LinkNav } from './link-nav'
 
 type linkType = 'about' | 'projects' | 'abilities'
 
@@ -51,22 +51,29 @@ export default function Header() {
   return (
     <div className="w-full">
       <nav className={isClosedNav ? 'hidden' : stylesNavMobile}>
-        <a onClick={handleSetClosedNav} className="self-end  pr-4 ">
-          <LuX className="h-8 w-8 bg-slate-200" />
-        </a>
+        <button
+          aria-label="fechar menu"
+          onClick={handleSetClosedNav}
+          className="self-end  pr-4 "
+        >
+          <LuX className="h-8 w-8 text-slate-200" />
+        </button>
         <LinkNav
+          arialLabel="Sobre Web Developer Paulo Santos, DevPaulo."
           title="Sobre"
           idElement="about"
           active={activeLink === 'about'}
           closedNav={handleSetClosedNav}
         />
         <LinkNav
+          arialLabel="Projetos que o Web Developer Paulo Santos criou, DevPaulo."
           title="Projetos"
           idElement="projects"
           active={activeLink === 'projects'}
           closedNav={handleSetClosedNav}
         />
         <LinkNav
+          arialLabel="Habilidades que o Web Developer Paulo Santos executa, DevPaulo."
           title="Habilidades"
           idElement="abilities"
           active={activeLink === 'abilities'}
@@ -93,16 +100,19 @@ export default function Header() {
 
           <nav className="hidden gap-8 sm:flex">
             <LinkNav
+              arialLabel="Sobre Web Developer Paulo Santos, DevPaulo."
               title="Sobre"
               idElement="about"
               active={activeLink === 'about'}
             />
             <LinkNav
+              arialLabel="Projetos que o Web Developer Paulo Santos criou, DevPaulo."
               title="Projetos"
               idElement="projects"
               active={activeLink === 'projects'}
             />
             <LinkNav
+              arialLabel="Habilidades que o Web Developer Paulo Santos executa, DevPaulo."
               title="Habilidades"
               idElement="abilities"
               active={activeLink === 'abilities'}

@@ -17,6 +17,7 @@ export default function CallToAction() {
         oportunidades de parceria.
       </p>
       <a
+        aria-label="Iniciar uma conversa Com Dev Paulo"
         target="_blank"
         href="https://wa.me/5535992477926?text=Ol%C3%A1+Paulo%2C+vi+seu+perfil+no+seu+site%2C+estou+interessado+no+seus+servi%C3%A7o."
         className="group  relative z-10 flex items-center gap-4 rounded-full border border-transparent bg-primary

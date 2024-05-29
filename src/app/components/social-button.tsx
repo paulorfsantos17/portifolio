@@ -2,11 +2,17 @@ import { LinkHTMLAttributes } from 'react'
 
 interface SocialButtonProps extends LinkHTMLAttributes<HTMLLinkElement> {
   icon: React.ReactNode
+  arialLabel: string
   href: string
 }
-export default function SocialButton({ icon, href }: SocialButtonProps) {
+export default function SocialButton({
+  icon,
+  href,
+  arialLabel,
+}: SocialButtonProps) {
   return (
     <a
+      aria-label={arialLabel}
       href={href}
       target="_blank"
       className="flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border-opacity-0  bg-primary-light

@@ -41,16 +41,19 @@ export default function About() {
 
         <nav className="animate-in fade-in-5 zoom-in flex h-20 w-full justify-center gap-16 delay-200 duration-700">
           <SocialButton
+            arialLabel="WhatsApp do Dev Paulo"
             href="https://wa.me/5535992477926?text=Ol%C3%A1+Paulo%2C+vi+seu+perfil+no+seu+site%2C+estou+interessado+no+seus+servi%C3%A7o."
             icon={<FaWhatsapp className="h-8 w-8" />}
             title="Whatsapp"
           />
           <SocialButton
+            arialLabel="Linkedin WhatsApp do Dev Paulo"
             href="https://www.linkedin.com/in/paulosantosdesenvolvedor/"
             icon={<FaLinkedinIn className="h-8 w-8" />}
             title="Linkedin"
           />
           <SocialButton
+            arialLabel="Github WhatsApp do Dev Paulo"
             href="https://github.com/paulorfsantos17"
             icon={<FaGithub className="h-8 w-8" />}
             title="GitHub"
