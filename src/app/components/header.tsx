@@ -52,7 +52,7 @@ export default function Header() {
     <div className="w-full">
       <nav className={isClosedNav ? 'hidden' : stylesNavMobile}>
         <a onClick={handleSetClosedNav} className="self-end  pr-4 ">
-          <LuX className="h-8 w-8" />
+          <LuX className="h-8 w-8 bg-slate-200" />
         </a>
         <LinkNav
           title="Sobre"

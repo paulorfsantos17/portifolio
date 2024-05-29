@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "Coffee Devlivery",
+      "description": "O “Coffee Delivery” é um projeto de e-commerce para uma cafeteria virtual, onde os usuários podem escolher cafés, adicionar ao carrinho e finalizar a compra com opções de pagamento e entrega.",
+      "imageUrl": "/projects/coffedelivery.png",
+      "url": "https://coffee-delivery-ignite-neon.vercel.app"
+    },
+    {
+      "name": "Ignite Call",
+      "description": "“Ignite Call” é uma plataforma de agendamento online que sincroniza com calendários para facilitar a marcação de reuniões e compromissos.",
+      "imageUrl": "/projects/ignitecall.png",
+      "url": "https://ignite-call-pied-sigma.vercel.app"
+    },
+    {
+      "name": "Clone HBO MAX",
+      "description": "O 'Clone HBO Max' é uma reprodução simplificada da tela inicial da plataforma de streaming HBO Max. Com um design responsivo e oferecendo uma experiência semelhante à do HBO Max.",
+      "imageUrl": "/projects/hbomax.png",
+      "url": "https://clone-hbomax-theta.vercel.app"
+    },
+    {
+      "name": "Restaurant Finder",
+      "description": "O projeto 'Restaurant Finder' é uma aplicação web, que permite aos usuários pesquisar e descobrir restaurantes. A interface é intuitiva e amigável.",
+      "imageUrl": "/projects/RestaurantFinder.png",
+      "url": "https://restaurant-search-ecru.vercel.app"
+    },
+    {
+      "name": "Ignite Shop",
+      "description": "O Ignite Shop é uma aplicação de e-commerce .Com uma interface moderna e intuitiva, permite aos usuários navegar, adicionar itens ao carrinho e finalizar compras de maneira eficiente.",
+      "imageUrl": "/projects/IgniteShop.png",
+      "url": "https://ignite-shop-oe1f.vercel.app"
+    },
+    {
+      "name": "Design System",
+      "description": "O projeto 'Design System' é uma aplicação, que apresenta um sistema de design abrangente. Inclui tokens de cores e outros elementos de interface padronizados.",
+      "imageUrl": "/projects/DesignSystem.png",
+      "url": "https://paulorfsantos17.github.io/05-Design-System/?path=/docs/tokens-colors--docs"
+    }
+  ]
+}

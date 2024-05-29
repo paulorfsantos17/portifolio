@@ -2,9 +2,13 @@
 import React from 'react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
+import data from '@/app/data/projects.json'
+
 import CardProject from './card-project'
 
 export default function Projects() {
+  const { projects } = data
+
   function handleScrollRight() {
     const slider = document.getElementById('slider')
 
@@ -47,13 +51,9 @@ export default function Projects() {
           id="slider"
           className=" flex h-[450px] items-center gap-12 overflow-x-auto px-4 [&::-webkit-scrollbar]:hidden "
         >
-          <CardProject />
-          <CardProject />
-          <CardProject />
-          <CardProject />
-          <CardProject />
-          <CardProject />
-          <CardProject />
+          {projects.map((project) => (
+            <CardProject key={project.name} {...project} />
+          ))}
         </div>
         <button
           className="hidden sm:block"

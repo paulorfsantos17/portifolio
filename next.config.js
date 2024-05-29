@@ -24,13 +24,6 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['animate.css', 'react-icons'],
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      // Ativa tree shaking para o lado do cliente
-      config.optimization.usedExports = true
-    }
-    return config
-  },
 }
 
 const nextConfigAndPurgeCss = withPurgeCSSModules(purgeConfig, nextConfig)

@@ -7,7 +7,7 @@ import SocialButton from './social-button'
 export default function About() {
   return (
     <main
-      className="my-24 mb-12 flex max-w-full flex-col items-center justify-center gap-12  sm:mx-12 sm:grid sm:grid-cols-2"
+      className="mb-12 mt-48 flex max-w-full flex-col items-center justify-center gap-12  sm:mx-12 sm:grid sm:grid-cols-2"
       id="about"
     >
       <div className=" animate-in fade-in slide-in-from-left flex flex-col gap-12 px-4 duration-500 ease-linear sm:gap-8 ">
@@ -20,10 +20,12 @@ export default function About() {
         </h1>
 
         <p className="text-center text-slate-200">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
-          feugiat eros. Nam malesuada placerat mi, vel finibus eros malesuada
-          et. Duis ultrices sit amet orci non congue. Cras pellentesque lectus
-          ac magna vulputate, quis convallis nisi lobortis.
+          Sou Paulo Santos, desenvolvedor web apaixonado por tecnologia desde os
+          14 anos. Formado como técnico de informática e cursando Análise e
+          Desenvolvimento de Sistemas, estou sempre buscando novos conhecimentos
+          para aprimorar minhas habilidades. Trabalho em projetos pessoais que
+          me desafiam e permitem crescer profissionalmente. Estou animado para
+          contribuir com soluções criativas e eficientes no desenvolvimento web.
         </p>
       </div>
 
@@ -39,14 +41,17 @@ export default function About() {
 
         <nav className="animate-in fade-in-5 zoom-in flex h-20 w-full justify-center gap-16 delay-200 duration-700">
           <SocialButton
+            href="https://wa.me/5535992477926?text=Ol%C3%A1+Paulo%2C+vi+seu+perfil+no+seu+site%2C+estou+interessado+no+seus+servi%C3%A7o."
             icon={<FaWhatsapp className="h-8 w-8" />}
             title="Whatsapp"
           />
           <SocialButton
+            href="https://www.linkedin.com/in/paulosantosdesenvolvedor/"
             icon={<FaLinkedinIn className="h-8 w-8" />}
             title="Linkedin"
           />
           <SocialButton
+            href="https://github.com/paulorfsantos17"
             icon={<FaGithub className="h-8 w-8" />}
             title="GitHub"
           />

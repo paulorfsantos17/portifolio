@@ -16,7 +16,9 @@ export default function CallToAction() {
         Estou sempre aberto para discutir trabalhos de Desenvolvimento Web ou
         oportunidades de parceria.
       </p>
-      <button
+      <a
+        target="_blank"
+        href="https://wa.me/5535992477926?text=Ol%C3%A1+Paulo%2C+vi+seu+perfil+no+seu+site%2C+estou+interessado+no+seus+servi%C3%A7o."
         className="group  relative z-10 flex items-center gap-4 rounded-full border border-transparent bg-primary
         px-6 py-3 font-ultralife font-bold uppercase text-slate-200 duration-300
         ease-in hover:border-primary-light hover:bg-transparent
@@ -28,7 +30,7 @@ export default function CallToAction() {
         ></div>
         <PiChat className="z-10 h-8 w-8 " />
         <p className="z-10">Iniciar uma conversa</p>
-      </button>
+      </a>
     </section>
   )
 }
