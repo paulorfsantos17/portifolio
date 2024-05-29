@@ -17,8 +17,8 @@ export default function CardProject() {
       ></div>
 
       <Image
-        width={230}
-        quality={60}
+        width={210}
+        quality={40}
         height={100}
         src={Project}
         alt=""
