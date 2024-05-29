@@ -10,7 +10,7 @@ export default function About() {
       className="my-24 mb-12 flex max-w-full flex-col items-center justify-center gap-12  sm:mx-12 sm:grid sm:grid-cols-2"
       id="about"
     >
-      <div className=" animate-in fade-in slide-in-from-left flex flex-col gap-12 px-4 duration-500 ease-linear sm:gap-8 ">
+      <div className=" flex flex-col gap-12 px-4 duration-500 ease-linear animate-in fade-in slide-in-from-left sm:gap-8 ">
         <h1
           className="inline-block bg-gradient-to-r from-secondary-light via-primary-light to-primary 
           bg-clip-text text-center font-ultralife text-4xl 
@@ -34,10 +34,10 @@ export default function About() {
           width={200}
           height={200}
           quality={80}
-          className="h-max-[260] animate-in fade-in zoom-in-50 duration-700 sm:max-w-[180px]"
+          className="h-max-[260] duration-700 animate-in fade-in zoom-in-50 sm:max-w-[180px]"
         />
 
-        <nav className="animate-in fade-in-5 zoom-in flex h-20 w-full justify-center gap-16 delay-200 duration-700">
+        <nav className="flex h-20 w-full justify-center gap-16 delay-200 duration-700 animate-in fade-in-5 zoom-in">
           <SocialButton
             icon={<FaWhatsapp className="h-8 w-8" />}
             title="Whatsapp"
