@@ -15,6 +15,7 @@ export default function CardProject({
 }: CardProjectProps) {
   return (
     <a
+      aria-label={description}
       target="_blank"
       href={url}
       className="r relative  flex h-96 min-w-[16rem] max-w-[18rem] cursor-pointer flex-col items-center

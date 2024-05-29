@@ -41,6 +41,7 @@ export default function Projects() {
           min-h-[450px] items-center gap-8 delay-500 duration-500"
       >
         <button
+          aria-label="Slider Left"
           onClick={() => handleScrollLeft()}
           onMouseOver={() => handleScrollLeft()}
           className="hidden sm:block "
@@ -56,6 +57,7 @@ export default function Projects() {
           ))}
         </div>
         <button
+          aria-label="Slider Right"
           className="hidden sm:block"
           onMouseOver={() => handleScrollRight()}
           onClick={() => handleScrollRight()}
