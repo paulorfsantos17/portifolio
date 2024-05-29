@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-// import withBundleAnalyzer from '@next/bundle-analyzer'
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path')
 
@@ -11,8 +7,9 @@ const path = require('path')
 const withPurgeCSSModules = require('next-purge-css-modules')
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-
-// const isAnalyzer = withBundleAnalyzer({ enabled: process.env.ANALYZE === true })
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
 const purgeConfig = {
   content: path.join(__dirname, 'src/**/*.{js,jsx,ts,tsx}'),
@@ -27,6 +24,15 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['animate.css', 'react-icons'],
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // Ativa tree shaking para o lado do cliente
+      config.optimization.usedExports = true
+    }
+    return config
+  },
 }
 
-module.exports = withPurgeCSSModules(purgeConfig, nextConfig)
+const nextConfigAndPurgeCss = withPurgeCSSModules(purgeConfig, nextConfig)
+
+module.exports = withBundleAnalyzer(nextConfigAndPurgeCss)
