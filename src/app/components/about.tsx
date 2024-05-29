@@ -7,7 +7,7 @@ import SocialButton from './social-button'
 export default function About() {
   return (
     <main
-      className="my-48 mb-12 flex max-w-full flex-col items-center justify-center gap-12 bg-particles-mobile  sm:mx-12 sm:grid sm:grid-cols-2"
+      className="my-24 mb-12 flex max-w-full flex-col items-center justify-center gap-12 bg-particles-mobile  sm:mx-12 sm:grid sm:grid-cols-2"
       id="about"
     >
       <div className=" flex flex-col gap-12 px-4 duration-500 ease-linear animate-in fade-in slide-in-from-left sm:gap-8 ">
@@ -27,11 +27,13 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-8 ">
+      <div className="flex flex-col items-center justify-center gap-8 sm:mt-4">
         <Image
           src={Avatar}
           alt=""
-          width={260}
+          width={200}
+          height={200}
+          quality={80}
           className="h-max-[260] duration-700 animate-in fade-in zoom-in-50 sm:max-w-[180px]"
         />
 

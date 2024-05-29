@@ -17,8 +17,11 @@ export default function CardProject() {
       ></div>
 
       <Image
+        width={230}
+        quality={60}
+        height={100}
         src={Project}
-        alt="0"
+        alt=""
         className="min-h-30  mt-4 w-[80%] rounded-xl"
       />
 
