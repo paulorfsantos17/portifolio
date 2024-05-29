@@ -19,7 +19,7 @@ export default function About() {
           Desenvolvedor Web
         </h1>
 
-        <p className="text-center text-slate-200">
+        <p className="text-center text-slate-200 sm:text-start">
           Sou Paulo Santos, desenvolvedor web apaixonado por tecnologia desde os
           14 anos. Formado como técnico de informática e cursando Análise e
           Desenvolvimento de Sistemas, estou sempre buscando novos conhecimentos
