@@ -1,10 +1,11 @@
 'use client'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 import data from '@/app/data/projects.json'
 
-import CardProject from './card-project'
+const CardProject = dynamic(() => import('./card-project'))
 
 export default function Projects() {
   const { projects } = data

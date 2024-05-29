@@ -7,7 +7,7 @@ import { TbBrandTypescript } from 'react-icons/tb'
 
 import CardAbility from './card-ability'
 
-export function Abilities() {
+export default function Abilities() {
   const [description, setDescription] = useState(
     '*Passe o mouse para ver a descrição da habilidade.',
   )

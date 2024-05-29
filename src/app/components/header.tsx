@@ -1,22 +1,21 @@
 'use client'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
-import { LuX } from 'react-icons/lu'
 
 import Logo from '@/app/assets/logo.svg'
 
 import { useScroll } from '../hooks/useScroll'
 import { LinkNav } from './link-nav'
 
-type linkType = 'about' | 'projects' | 'abilities'
+export type LinkType = 'about' | 'projects' | 'abilities'
+
+const PopoverNav = dynamic(() => import('./popover-nav'))
 
 export default function Header() {
   const [isClosedNav, setIsclosedNav] = useState<boolean>(true)
-  const [activeLink, setActiveLink] = useState<linkType>('about')
+  const [activeLink, setActiveLink] = useState<LinkType>('about')
   const { scrollPosition: scrollY } = useScroll()
-
-  const stylesNavMobile =
-    'absolute top-0 right-0 z-50 flex h-full w-full flex-col items-center gap-8 bg-slate-900 pt-8 text-xl '
 
   function handleSetClosedNav() {
     setIsclosedNav(!isClosedNav)
@@ -50,36 +49,11 @@ export default function Header() {
 
   return (
     <div className="w-full">
-      <nav className={isClosedNav ? 'hidden' : stylesNavMobile}>
-        <button
-          aria-label="fechar menu"
-          onClick={handleSetClosedNav}
-          className="self-end  pr-4 "
-        >
-          <LuX className="h-8 w-8 text-slate-200" />
-        </button>
-        <LinkNav
-          arialLabel="Sobre Web Developer Paulo Santos, DevPaulo."
-          title="Sobre"
-          idElement="about"
-          active={activeLink === 'about'}
-          closedNav={handleSetClosedNav}
-        />
-        <LinkNav
-          arialLabel="Projetos que o Web Developer Paulo Santos criou, DevPaulo."
-          title="Projetos"
-          idElement="projects"
-          active={activeLink === 'projects'}
-          closedNav={handleSetClosedNav}
-        />
-        <LinkNav
-          arialLabel="Habilidades que o Web Developer Paulo Santos executa, DevPaulo."
-          title="Habilidades"
-          idElement="abilities"
-          active={activeLink === 'abilities'}
-          closedNav={handleSetClosedNav}
-        />
-      </nav>
+      <PopoverNav
+        activeLink={activeLink}
+        handleSetClosedNav={handleSetClosedNav}
+        isClosedNav={isClosedNav}
+      />
       <header className="top-0 z-40 flex min-h-20 min-w-full flex-col gap-2 border-b border-b-primary-light/30 bg-background py-4 shadow shadow-primary-light/30 sm:fixed  sm:px-14 sm:py-4">
         <div className="flex w-full items-center justify-center sm:justify-between ">
           <Image
