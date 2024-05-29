@@ -7,7 +7,7 @@ import SocialButton from './social-button'
 export default function About() {
   return (
     <main
-      className="mb-12 mt-48 flex max-w-full flex-col items-center justify-center gap-12  sm:mx-12 sm:grid sm:grid-cols-2"
+      className="my-12 flex max-w-full flex-col items-center justify-center gap-12 sm:mx-12  sm:mt-48 sm:grid sm:grid-cols-2"
       id="about"
     >
       <div className=" animate-in fade-in slide-in-from-left flex flex-col gap-12 px-4 duration-500 ease-linear sm:gap-8 ">

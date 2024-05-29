@@ -22,7 +22,13 @@ const purgeConfig = {
 
 const nextConfig = {
   experimental: {
-    optimizePackageImports: ['animate.css', 'react-icons'],
+    optimizePackageImports: [
+      'animate.css',
+      'react-icons',
+      'react',
+      'react-dom',
+      'next',
+    ],
   },
 }
 

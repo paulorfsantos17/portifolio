@@ -74,7 +74,7 @@ export function Abilities() {
             self-center rounded-lg border border-primary/80 bg-primary/20 px-6 
             shadow-md  md:h-80"
         >
-          <p className=" text-md  text-slate-200">{description}</p>
+          <p className="text-sm text-slate-200 sm:text-base">{description}</p>
         </div>
         <div className="grid max-h-80 w-[90%] grid-cols-3 gap-3 self-center xl:grid-cols-4">
           {abilities.map((ability, index) => {
