@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
 import { FaCss3, FaHtml5, FaJs, FaReact } from 'react-icons/fa'
-import { RiTailwindCssFill } from 'react-icons/ri'
-import { SiStyledcomponents } from 'react-icons/si'
-import { TbBrandTypescript } from 'react-icons/tb'
+import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
+import { SiStyledcomponents, SiVite, SiVitest } from 'react-icons/si'
+import { TbBrandStorybook, TbBrandTypescript } from 'react-icons/tb'
 
 import CardAbility from './card-ability'
 
@@ -15,6 +15,7 @@ export default function Abilities() {
   function handleSetDescription(description: string) {
     setDescription(description)
   }
+
   const abilities = [
     {
       name: 'javascript',
@@ -53,10 +54,41 @@ export default function Abilities() {
       icon: <RiTailwindCssFill className="h-2/3 w-2/3" />,
     },
     {
-      name: 'Styled Component',
+      name: 'Styled Components',
       description:
         'Styled Components é uma abordagem de CSS-in-JS, que permite integrar estilos CSS dentro do JavaScript, criando uma experiência de desenvolvimento mais coesa e componentizada.',
       icon: <SiStyledcomponents className="h-2/3 w-2/3" />,
+    },
+    {
+      name: 'Stiches',
+      description:
+        'Stitches é um framework CSS-in-JS que oferece uma abordagem moderna e eficiente para estilizar componentes. Com um runtime quase nulo e suporte a multi-variantes.',
+      icon: 'abilities/stithes.svg',
+    },
+    {
+      name: 'NextJS',
+      description:
+        'Next.js é um framework React para produção eficiente de web apps, combinando renderização estática e de servidor.',
+      icon: <RiNextjsLine className="h-2/3 w-2/3" />,
+    },
+    {
+      name: 'Vite',
+      description:
+        'Vite é uma ferramenta de build moderna que oferece HMR (Substituição de Módulo em Tempo Real) rápido e builds otimizados para desenvolvimento web.',
+      icon: <SiVite className="h-2/3 w-2/3" />,
+    },
+    {
+      name: 'Vitest',
+      description:
+        'Vitest é um framework de testes moderno que permite a realização de testes unitários de forma rápida e eficiente, utilizando a potência do Vite para uma experiência de desenvolvimento ágil e uma API familiar para quem já usa Jest.',
+      icon: <SiVitest className="h-2/3 w-2/3" />,
+    },
+
+    {
+      name: 'StoryBook',
+      description:
+        'Storybook é uma ferramenta interativa de desenvolvimento front-end que permite aos desenvolvedores construir e refinar componentes de UI. É ideal para desenvolver a interface do usuário de forma iterativa e documentar componentes para uso futuro.',
+      icon: <TbBrandStorybook className="h-2/3 w-2/3" />,
     },
   ]
 
