@@ -64,6 +64,7 @@ export default function Header() {
             className="sm:h-12"
           />
           <button
+            aria-label="button-popover"
             onClick={handleSetClosedNav}
             className="flex h-14 w-14 flex-col items-center justify-center gap-3  sm:hidden"
           >
