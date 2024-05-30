@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@iconfu/svg-inject':
-        specifier: ^1.2.3
-        version: 1.2.3
       '@next/bundle-analyzer':
         specifier: ^14.2.3
         version: 14.2.3
@@ -135,9 +132,6 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
-
-  '@iconfu/svg-inject@1.2.3':
-    resolution: {integrity: sha512-3v1MUAJqmJS4jmhHoCkSxt+EdJrjPHlLXrWocCT25kCxnxJto8028Z6CC406EL11KA53SDZgI/QQA5GEJAoiRw==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -2334,8 +2328,6 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/object-schema@2.0.3': {}
-
-  '@iconfu/svg-inject@1.2.3': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:

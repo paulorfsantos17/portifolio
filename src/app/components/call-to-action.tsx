@@ -3,18 +3,19 @@ import { PiChat } from 'react-icons/pi'
 export default function CallToAction() {
   return (
     <section
-      className="mx-8 my-12 flex flex-col items-center
+      className="mx-8 my-12 flex  flex-col items-center
         justify-center gap-16 bg-gradient-to-r  from-secondary-light via-primary-light to-primary 
         bg-clip-text 
         font-ultralife text-transparent md:mt-40 md:px-36"
       data-taos-offset="600"
     >
-      <h2 className="text-center  font-ultralife text-3xl font-bold uppercase md:text-5xl  ">
-        Interessado em colaborar comigo?
+      <h2 className=" text-center  font-ultralife text-3xl font-bold uppercase   md:text-5xl md:leading-tight">
+        Fale Comigo no WhatsApp e Dê o Primeiro Passo Para um Site Inovador!
       </h2>
       <p className="text-center text-primary-light md:text-3xl">
-        Estou sempre aberto para discutir trabalhos de Desenvolvimento Web ou
-        oportunidades de parceria.
+        Quer destacar seu negócio no mundo digital? Não espere mais! Clique no
+        botão abaixo e vamos conversar sobre como posso ajudar a transformar sua
+        visão em uma realidade online impressionante.
       </p>
       <a
         aria-label="Iniciar uma conversa Com Dev Paulo"
@@ -30,7 +31,7 @@ export default function CallToAction() {
             bg-primary opacity-100 blur-sm   group-hover:animate-none group-hover:opacity-0"
         ></div>
         <PiChat className="z-10 h-8 w-8 " />
-        <p className="z-10">Iniciar uma conversa</p>
+        <p className="z-10">Converse Agora</p>
       </a>
     </section>
   )

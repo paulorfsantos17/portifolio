@@ -2,7 +2,12 @@
 import { useState } from 'react'
 import { FaCss3, FaHtml5, FaJs, FaReact } from 'react-icons/fa'
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
-import { SiStyledcomponents, SiVite, SiVitest } from 'react-icons/si'
+import {
+  SiPlaywright,
+  SiStyledcomponents,
+  SiVite,
+  SiVitest,
+} from 'react-icons/si'
 import { TbBrandStorybook, TbBrandTypescript } from 'react-icons/tb'
 
 import CardAbility from './card-ability'
@@ -60,12 +65,6 @@ export default function Abilities() {
       icon: <SiStyledcomponents className="h-2/3 w-2/3" />,
     },
     {
-      name: 'Stiches',
-      description:
-        'Stitches é um framework CSS-in-JS que oferece uma abordagem moderna e eficiente para estilizar componentes. Com um runtime quase nulo e suporte a multi-variantes.',
-      icon: 'abilities/stithes.svg',
-    },
-    {
       name: 'NextJS',
       description:
         'Next.js é um framework React para produção eficiente de web apps, combinando renderização estática e de servidor.',
@@ -83,7 +82,12 @@ export default function Abilities() {
         'Vitest é um framework de testes moderno que permite a realização de testes unitários de forma rápida e eficiente, utilizando a potência do Vite para uma experiência de desenvolvimento ágil e uma API familiar para quem já usa Jest.',
       icon: <SiVitest className="h-2/3 w-2/3" />,
     },
-
+    {
+      name: 'Playwright',
+      description:
+        'Playwright é uma ferramenta de automação de navegador de código aberto da Microsoft para testar aplicações web modernas. Funciona em todos os navegadores modernos e plataformas, automatizando tarefas como cliques e preenchimento de formulários, sem a necessidade de recarregar a página inteira.',
+      icon: <SiPlaywright className="h-2/3 w-2/3" />,
+    },
     {
       name: 'StoryBook',
       description:
@@ -100,15 +104,17 @@ export default function Abilities() {
       >
         Habilidades
       </h3>
-      <div className=" flex flex-col gap-12 sm:flex-row ">
+      <div className="flex  flex-col  gap-12 sm:flex-row">
         <div
-          className=" flex min-h-40 w-[90%] items-center justify-center 
-            self-center rounded-lg border border-primary/80 bg-primary/20 px-6 
-            shadow-md  md:h-80"
+          className="flex min-h-60 w-[90%] items-center justify-center self-center
+            rounded-lg border border-primary/80 bg-primary/20 px-6 shadow-md
+            sm:min-h-80 sm:px-16 md:min-h-[38rem] xl:min-h-[28rem]"
         >
-          <p className="text-sm text-slate-200 sm:text-base">{description}</p>
+          <p className="text-center text-sm text-slate-200 sm:text-3xl">
+            {description}
+          </p>
         </div>
-        <div className="grid max-h-80 w-[90%] grid-cols-3 gap-3 self-center xl:grid-cols-4">
+        <div className="grid h-full w-[90%] grid-cols-3 gap-3 self-center xl:grid-cols-4">
           {abilities.map((ability, index) => {
             return (
               <CardAbility
