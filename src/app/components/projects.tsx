@@ -33,13 +33,13 @@ export default function Projects() {
 
   return (
     <section className="my-8 ml-8 space-y-6 sm:mx-10" id="projects">
-      <h2 className="animate-in fade-in slide-in-from-left font-ultralife text-3xl font-bold uppercase text-slate-200 delay-500 duration-500">
+      <h2 className="font-ultralife text-3xl font-bold uppercase text-slate-200 sm:delay-500 sm:duration-500 sm:animate-in sm:fade-in sm:slide-in-from-left">
         Projetos
       </h2>
 
       <div
-        className="animate-in  fade-in slide-in-from-left flex 
-          min-h-[450px] items-center gap-8 delay-500 duration-500"
+        className="flex  min-h-[450px] items-center gap-8 
+          sm:delay-500 sm:duration-500 sm:animate-in sm:fade-in sm:slide-in-from-left"
       >
         <button
           aria-label="Slider Left"

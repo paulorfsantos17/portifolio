@@ -10,7 +10,7 @@ export default function About() {
       className="my-12 flex max-w-full flex-col items-center justify-center gap-12 sm:mx-12  sm:mt-48 sm:grid sm:grid-cols-2"
       id="about"
     >
-      <div className="animaste-in fade-in slide-in-from-left flex flex-col gap-12 px-4 duration-500 ease-linear sm:gap-8 ">
+      <div className="flex flex-col gap-12 px-4 sm:gap-8 sm:duration-500 sm:ease-linear sm:animate-in sm:fade-in sm:slide-in-from-left ">
         <h1
           className="inline-block bg-gradient-to-r from-secondary-light via-primary-light to-primary 
           bg-clip-text text-center font-ultralife text-4xl 
@@ -36,10 +36,10 @@ export default function About() {
           width={200}
           height={200}
           quality={80}
-          className="h-max-[260] animate-in fade-in zoom-in-50 duration-700 sm:max-w-[180px]"
+          className="h-max-[260] sm:max-w-[180px] sm:duration-700 sm:animate-in sm:fade-in sm:zoom-in-50"
         />
 
-        <nav className="animate-in fade-in-5 zoom-in flex h-20 w-full justify-center gap-16 delay-200 duration-700">
+        <nav className="flex h-20 w-full justify-center gap-16 sm:delay-200 sm:duration-700 sm:animate-in sm:fade-in-5 sm:zoom-in">
           <SocialButton
             arialLabel="WhatsApp do Dev Paulo"
             href="https://wa.me/5535992477926?text=Ol%C3%A1+Paulo%2C+vi+seu+perfil+no+seu+site%2C+estou+interessado+no+seus+servi%C3%A7o."

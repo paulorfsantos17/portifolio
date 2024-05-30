@@ -8,10 +8,5 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 'latest',
   },
-  extends: [
-    'eslint:recommended',
-    'next',
-    '@rocketseat/eslint-config/next',
-    'next/core-web-vitals',
-  ],
+  extends: ['@rocketseat/eslint-config/next', 'next/core-web-vitals'],
 }

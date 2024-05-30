@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
         className={`${archivo.className} w-screen bg-background bg-blur-gradient-mobile bg-cover sm:bg-blur-gradient`}
       >
