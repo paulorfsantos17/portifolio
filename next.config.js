@@ -4,7 +4,6 @@
 const path = require('path')
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPurgeCSSModules = require('next-purge-css-modules')
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -22,16 +21,10 @@ const purgeConfig = {
 
 const nextConfig = {
   experimental: {
-    optimizePackageImports: [
-      'animate.css',
-      'react-icons',
-      'react',
-      'react-dom',
-      'next',
-    ],
+    optimizePackageImports: ['react-icons'],
   },
 }
 
-const nextConfigAndPurgeCss = withPurgeCSSModules(purgeConfig, nextConfig)
+const nextConfigAndPurgeCss = (purgeConfig, nextConfig)
 
 module.exports = withBundleAnalyzer(nextConfigAndPurgeCss)

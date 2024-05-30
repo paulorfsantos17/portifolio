@@ -1,5 +1,4 @@
 import './globals.css'
-import 'animate.css/animate.min.css'
 
 import type { Metadata } from 'next'
 import { Archivo } from 'next/font/google'

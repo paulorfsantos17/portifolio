@@ -25,7 +25,8 @@ const config: Config = {
         'slate-200': '#E2E8F0',
       },
     },
-    plugins: [require('tailwindcss-animate')],
+    // eslint-disable-next-line prettier/prettier
+    plugins: [require("tailwindcss-animate")],
   },
 }
 export default config
