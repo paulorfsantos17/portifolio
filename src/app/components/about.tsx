@@ -20,12 +20,13 @@ export default function About() {
         </h1>
 
         <p className="text-center text-slate-200 sm:text-start">
-          Sou Paulo Santos, desenvolvedor web apaixonado por tecnologia desde os
-          14 anos. Formado como técnico de informática e cursando Análise e
+          Sou Paulo Santos, desenvolvedor web e apaixonado por tecnologia desde
+          os 14 anos. Formado como técnico de informática e cursando Análise e
           Desenvolvimento de Sistemas, estou sempre buscando novos conhecimentos
-          para aprimorar minhas habilidades. Trabalho em projetos pessoais que
-          me desafiam e permitem crescer profissionalmente. Estou animado para
-          contribuir com soluções criativas e eficientes no desenvolvimento web.
+          para aprimorar minhas habilidades. Trabalho em projetos que me
+          desafiam e permitem crescer profissionalmente. Estou animado para
+          contribuir com soluções criativas e eficientes no desenvolvimento web
+          da sua empresa.
         </p>
       </div>
 
